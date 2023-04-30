@@ -10,6 +10,13 @@ To install the `bmx-zoomify` package, you can use npm:
 npm i bmx-zoomify
 ```
 
+or
+
+```bash
+npm i bmx-zoomify --force
+```
+
+
 ## Usage
 
 To use the `bmx-zoomify` package, you need to add the `bmx-zoomify` tag your HTML document:
@@ -31,7 +38,7 @@ let src: ZoomifyImage = {
 };
 ```
 
-You can customize the image size by providing your own the CSS styles or Tailwind.
+You can customize the image size by providing your own CSS styles or Tailwind.
 
 ```html
 <bmx-zoomify [src]="src" class="w-full h-full"></bmx-zoomify>
