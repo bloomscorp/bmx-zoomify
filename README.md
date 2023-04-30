@@ -6,7 +6,7 @@ The `bmx-zoomify` package is a simple and lightweight npm package that enables m
 
 To install the `bmx-zoomify` package, you can use npm:
 
-```cmd
+```bash
 npm i bmx-zoomify
 ```
 
@@ -25,7 +25,9 @@ The `bmx-zoomify` package comes with some default interfaces. You need provide t
 ```typescript
 let src: ZoomifyImage = {
 	url: 'image.jpg', //image url from assets folder or CDN
-	altText: '' //alt Text for SEO
+	altText: '', //alt Text for SEO
+	width: 'auto',
+	height: 'auto' //provide height and width for image optimisation
 };
 ```
 
