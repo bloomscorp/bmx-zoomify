@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "bmx-zoomify": {
+      "projectType": "library",
+      "root": "projects/bmx-zoomify",
+      "sourceRoot": "projects/bmx-zoomify/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/bmx-zoomify/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/bmx-zoomify/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/bmx-zoomify/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/bmx-zoomify/src/test.ts",
+            "tsConfig": "projects/bmx-zoomify/tsconfig.spec.json",
+            "karmaConfig": "projects/bmx-zoomify/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "bmx-zoomify"
 }
