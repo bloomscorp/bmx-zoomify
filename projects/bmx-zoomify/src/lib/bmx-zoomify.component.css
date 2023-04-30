@@ -1,0 +1,27 @@
+.bmx-zoomify-main-image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.bmx-zoomify-pig-zoom {
+	/*display: none;*/
+	background-position: 50% 50%;
+	overflow: hidden;
+	background-size: calc(max(100%, 1000px));
+}
+
+.bmx-zoomify-pig-zoom img {
+	width: 100%;
+	cursor: crosshair;
+	transition: opacity .5s;
+	margin: 5px 0;
+}
+
+@media (min-width: 759px) {
+	.bmx-zoomify-pig-zoom img:hover {
+		opacity: 0;
+	}
+}

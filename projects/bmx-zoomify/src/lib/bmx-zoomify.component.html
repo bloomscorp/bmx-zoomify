@@ -1,0 +1,9 @@
+<div class="bmx-zoomify-main-image-container bmx-zoomify-pig-zoom"
+	 #zoomDiv
+	 (mousemove)="zoom($event)" (mouseleave)="zoomOut()">
+	<img [src]="src.url"
+		 class="bmx-pig-main-image"
+		 [width]="src.width? src.width: 'auto'"
+		 [height]="src.width? src.height: 'auto'"
+		 [alt]="src.altText" />
+</div>
