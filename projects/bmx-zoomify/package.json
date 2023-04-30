@@ -1,6 +1,6 @@
 {
 	"name": "bmx-zoomify",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "A library for magnifying images",
 	"author": {
 		"name": "Namrata Podder",
@@ -19,7 +19,9 @@
 		"magnify",
 		"zoom",
 		"zoomify images",
-		"magnify images"
+		"magnify images",
+		"angular image magnifier library",
+		"zoom images in angular"
 	],
 	"homepage": "https://github.com/bloomscorp/bmx-zoomify#readme",
 	"peerDependencies": {
