@@ -29,12 +29,27 @@ To use the `bmx-zoomify` package, you need to add the `bmx-zoomify` tag your HTM
 
 The `bmx-zoomify` package comes with some default interfaces. You need provide the src to render the image.
 
+Note: `width` and `height` attributes are optional
+
 ```typescript
-let src: ZoomifyImage = {
+import {BmxZoomifyImage} from "./bmx-zoomify-image";
+
+let src: BmxZoomifyImage = {
+	url: 'image.jpg', //image url from assets folder or CDN
+	altText: '' //alt Text for SEO
+};
+```
+
+or
+
+```typescript
+import {BmxZoomifyImage} from "./bmx-zoomify-image";
+
+let src: BmxZoomifyImage = {
 	url: 'image.jpg', //image url from assets folder or CDN
 	altText: '', //alt Text for SEO
-	width: 'auto',
-	height: 'auto' //provide height and width for image optimisation
+	width: '500',
+	height: '500' //provide height and width for image optimisation
 };
 ```
 
@@ -42,6 +57,24 @@ You can customize the image size by providing your own CSS styles or Tailwind.
 
 ```html
 <bmx-zoomify [src]="src" class="w-full h-full"></bmx-zoomify>
+```
+or
+
+```html
+<bmx-zoomify [src]="src" class="w-52 h-full"></bmx-zoomify>
+```
+
+or
+
+```html
+<bmx-zoomify [src]="src" class="zoom-style"></bmx-zoomify>
+```
+
+```css
+.zoom-style {
+	width: 330px;
+	height: 250px;
+}
 ```
 
 ## Compatibility
