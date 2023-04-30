@@ -1,20 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-bmx-zoomify',
-  template: `
-    <p>
-      bmx-zoomify works!
-    </p>
-  `,
-  styles: [
-  ]
+	selector: 'bmx-zoomify',
+	templateUrl: './bmx-zoomify.component.html',
+	styleUrls: ['./bmx-zoomify.component.css']
 })
 export class BmxZoomifyComponent implements OnInit {
 
-  constructor() { }
+	constructor() {
+	}
 
-  ngOnInit(): void {
-  }
+	ngOnInit(): void {
+	}
 
 }
